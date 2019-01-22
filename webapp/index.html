@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<html>
+
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta charset="UTF-8">
+
+		<title>Web app testing ayyo</title>
+
+		<script id="sap-ui-bootstrap"
+			src="https://openui5beta.hana.onedemand.com/resources/sap-ui-core.js"
+			data-sap-ui-async="true"
+			data-sap-ui-libs="sap.m"
+			data-sap-ui-theme="sap_belize"
+			data-sap-ui-compatVersion="edge"
+			data-sap-ui-preload="async">
+		</script>
+
+		<script>
+			sap.ui.getCore().attachInit(function() {
+				
+				var oImage = new sap.m.Image({
+					src: "https://www.google.com/logos/doodles/2019/lev-landaus-111th-birthday-5630512767959040-l.png"
+				}).placeAt("content");
+				
+				// new sap.m.Shell({
+				// 	app: new sap.ui.core.ComponentContainer({
+				// 		height : "100%",
+				// 		name : "SAPUI5-test-application.test-sapui5"
+				// 	})
+				// }).placeAt("content");
+			});
+		</script>
+	</head>
+
+	<body class="sapUiBody" id="content">
+		<p>hello World!</p>
+	</body>
+
+</html>
