@@ -5,6 +5,24 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta charset="UTF-8">
 		<title>SAPUI5 Learning</title>
+		<script id="sap-ui-bootstrap"
+			src="https://openui5.hana.ondemand.com/1.42.6/resources/sap-ui-core.js"
+			data-sap-ui-async="true"
+			data-sap-ui-libs="sap.m"
+			data-sap-ui-theme="sap_belize"
+			data-sap-ui-compatVersion="edge"
+			data-sap-ui-preload="async">
+		</script>
+		<script>
+			sap.ui.getCore().attachInit(function() {
+				
+				var oImage = new sap.m.Image({
+					src: "https://images.pexels.com/photos/968243/pexels-photo-968243.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+				}).placeAt("content");
+				
+				oImage.setHeight("300px");
+			});
+		</script>
 	</head>
 
 	<body class="sapUiBody" id="content">
